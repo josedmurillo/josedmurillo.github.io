@@ -1,0 +1,2306 @@
+/* Pangram Pangram Neue Montreal fonts added */
+
+@font-face {
+    font-family: 'pp_neue_montrealbook';
+    src: url('pfonts/ppneuemontreal-book-webfont.woff2') format('woff2'),
+         url('pfonts/ppneuemontreal-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neue_montrealregular';
+    src: url('pfonts/neuemontreal-regular-webfont.woff2') format('woff2'),
+         url('pfonts/neuemontreal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neue_montrealbold';
+    src: url('pfonts/neuemontreal-bold-webfont.woff2') format('woff2'),
+         url('pfonts/neuemontreal-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* universal styles for all screen sizes */
+
+div, section, article, a, p, h1, h2, h3, nav, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.contentWrap {
+    display: flex;
+    flex-flow: column;
+    background-color: #C6C2BF;
+    border: 1px solid #2E2F31;
+    margin: auto;
+}
+
+body {
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 24px;
+    background-color: #DDD9D6;
+    color: #2E2F31;
+}
+
+a {
+    color: #2E2F31;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 1px;
+    min-height: 7vh;
+    padding: 0px 10px;
+    border-bottom: 1px solid #2E2F31;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    font-size: 16px;
+    letter-spacing: 1px;
+    min-height: 7vh;
+    padding: 0px 10px;
+    border-top: 1px solid #2E2F31;
+}
+
+header a, footer a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header p, footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mainnav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.porfolioNav {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.currentPage {
+    border-bottom: 1px solid #2E2F31;
+}
+
+.profileLink, .emailLink, .projectsLink {
+    margin-left: 25px;
+}
+
+
+.profileLink:hover, .emailLink:hover, .projectsLink:hover {
+    border-bottom: 1px solid #2E2F31;
+}
+
+.projects li:hover {
+    background-color: #B9B2FF;
+}
+
+/* homepage styles */
+
+#homepage {
+    position: relative;
+    min-height: 100vh;
+}
+
+#home-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DDD9D6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2E2F31;
+    width: 100%;
+}
+
+#home-content {
+    display: flex;
+    flex-flow: column;
+    background-color: #C6C2BF;
+    min-height: 86vh;
+}
+
+#home-image img {
+    width: 200px;
+    height: 200px;
+}
+
+/* nav */
+#project-nav {
+    width: 100%;
+}
+
+.projects li {
+    display: block;
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 62px;
+    letter-spacing: -1px;
+    text-align: center;
+    border-bottom: 1px solid #2E2F31;
+    padding: 15px 25px;
+}
+
+.projects li a {
+    display: block;
+}
+
+#home-image img {
+    margin: auto;
+    transition: all 2s ease-out;
+}
+
+#home-image img:hover {
+    transform: rotate(1800deg);
+}
+
+/* project pages styles */
+
+h1 {
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 62px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0px 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #2E2F31;
+    padding-top: 30px;
+}
+
+.textContainer {
+    display: flex;
+    flex-flow: column;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+.textContainer div {
+    width: 100%;
+}
+
+.shortDescription {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectText p {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.projectText .lastP {
+    margin-bottom: 0px;
+}
+
+.projectText a {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-out;
+    text-align: center;
+}
+
+.projectText a:hover {
+    transform: translate(25px);
+    text-decoration: underline;
+}
+
+.projectText h2 {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 0.2px;
+}
+
+.projectText h3 {
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
+.displayImage {
+    width: 350px;
+    margin: auto;
+}
+
+.imageContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+/* multiple images per section */
+.halfImage {
+    width: 175px;
+}
+
+.thirdImage {
+    height: 100px;
+}
+
+#archfey-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #D0F458;
+}
+
+#grimes-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #F97FF4;
+}
+
+#kuker-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #CADCFF;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #C6C2BF;
+    border-top: 1px solid #2E2F31;
+    padding: 35px 0px;
+}
+
+.backNext div p {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.backNext {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.backNext div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next {
+    margin-left: 12.5px;
+    border-radius: 50%;
+}
+
+.back {
+    margin-right: 12.5px;
+    border-radius: 50%;
+}
+
+.next:hover, .back:hover {
+    background-color: #DDD9D6;
+}
+
+/* profile pages styles */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#education, #des-philo, #contact {
+    display: flex;
+    flex-flow: column;
+    background-color: #B9B2FF;
+    padding: 50px 25px;
+    border-bottom: 1px solid #2E2F31;
+}
+
+#intro, #values, #socials {
+    display: flex;
+    flex-flow: column;
+    background-color: #CBC7FC;
+    padding: 50px 25px;
+}
+
+.profileText {
+    width: 100%;
+}
+
+.profileText p {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.profileText .lastP {
+    margin-bottom: 0px;
+}
+
+.profileText a {
+    display: block;
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-out;
+}
+
+.profileText a:hover {
+    transform: translate(25px);
+    text-decoration: underline;
+}
+
+.profileText h2 {
+    font-family: 'pp_neue_montrealbook', sans-serif;
+    font-size: 36px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    margin-bottom: 30px;
+}
+
+.profileText h3 {
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
+/* nav */
+#profile-nav {
+    width: 100%;
+}
+
+.profileRef {
+    width: 100%;
+}
+
+.profileRef li {
+    display: block;
+    font-family: 'neue_montrealregular', sans-serif;
+    font-size: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    border-bottom: 1px solid #2E2F31;
+    padding: 10px 25px;
+}
+
+.profileRef li a {
+    display: block;
+}
+
+.current {
+    background-color: #B9B2FF;
+}
+
+.notCurrent:hover {
+    background-color: #DDD9D6;
+}
+
+.aboutImage {
+    background-image: url(images/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #DDD9D6;
+    border-right: 1px solid #2E2F31;
+    border-bottom: 1px solid #2E2F31;
+    width: 100%;
+}
+
+.valuesImage {
+    background-image: url(images/values.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #DDD9D6;
+    border-right: 1px solid #2E2F31;
+    border-bottom: 1px solid #2E2F31;
+    width: 100%;
+}
+
+.contactImage {
+    background-image: url(images/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #DDD9D6;
+    border-right: 1px solid #2E2F31;
+    border-bottom: 1px solid #2E2F31;
+    width: 100%;
+}
+
+@media only screen and (min-width: 599px) {
+    /* homepage styles */
+
+    #homepage {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #home-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DDD9D6;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #2E2F31;
+        width: 100%;
+    }
+
+    #home-content {
+        display: flex;
+        flex-flow: column;
+        background-color: #C6C2BF;
+        min-height: 86vh;
+    }
+
+    #home-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    header, footer {
+        font-size: 18px;
+        padding: 0px 25px;
+    }
+
+    /* nav */
+    #project-nav {
+        width: 100%;
+    }
+
+    .projects li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: center;
+        border-bottom: 1px solid #2E2F31;
+        padding: 15px 25px;
+    }
+
+    #home-image img {
+        margin: auto;
+        transition: all 2s ease-out;
+    }
+
+    #home-image img:hover {
+        transform: rotate(1800deg);
+    }
+
+    /* project pages styles */
+
+    h1 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 0px 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #2E2F31;
+        padding-top: 30px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: column;
+        width: 550px;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+
+    .textContainer div {
+        width: 100%;
+    }
+
+    .shortDescription {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        line-height: 1.5;
+        width: 400px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .projectText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        width: 550px;
+        margin-bottom: 30px;
+    }
+
+    .projectText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .projectText a {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        transition: all 0.2s ease-out;
+        text-align: center;
+    }
+
+    .projectText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .projectText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 36px;
+        text-align: left;
+        margin-bottom: 30px;
+        letter-spacing: 0.2px;
+    }
+
+    .projectText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    .displayImage {
+        width: 550px;
+        margin: auto;
+    }
+    
+    .imageContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 550px;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+
+    /* multiple images per section */
+    .halfImage {
+        width: 275px;
+    }
+
+    .thirdImage {
+        height: 150px;
+    }
+
+    #archfey-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #D0F458;
+    }
+
+    #grimes-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #F97FF4;
+    }
+
+    #kuker-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #CADCFF;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #C6C2BF;
+        border-top: 1px solid #2E2F31;
+        padding: 35px 0px;
+    }
+
+    .backNext div p {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 20px;
+    }
+
+    .backNext {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .backNext div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .next {
+        margin-left: 12.5px;
+        border-radius: 50%;
+    }
+
+    .back {
+        margin-right: 12.5px;
+        border-radius: 50%;
+    }
+
+    .next:hover, .back:hover {
+        background-color: #DDD9D6;
+    }
+
+    /* profile pages styles */
+
+    .profile {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .profileTextContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #education, #des-philo, #contact {
+        display: flex;
+        flex-flow: column;
+        background-color: #B9B2FF;
+        padding: 50px 25px;
+        border-bottom: 1px solid #2E2F31;
+    }
+
+    #intro, #values, #socials {
+        display: flex;
+        flex-flow: column;
+        background-color: #CBC7FC;
+        padding: 50px 25px;
+    }
+
+    .profileText {
+        width: 100%;
+    }
+
+    .profileText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        width: 550px;
+        margin-bottom: 30px;
+    }
+
+    .profileText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .profileText a {
+        display: block;
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        transition: all 0.2s ease-out;
+    }
+
+    .profileText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .profileText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 36px;
+        text-align: left;
+        letter-spacing: 0.2px;
+        margin-bottom: 30px;
+    }
+
+    .profileText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    /* nav */
+    #profile-nav {
+        width: 50%;
+    }
+
+    .profileRef {
+        width: 100%;
+    }
+
+    .profileRef li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 48px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 10px 25px;
+    }
+
+    .current {
+        background-color: #B9B2FF;
+    }
+
+    .notCurrent:hover {
+        background-color: #DDD9D6;
+    }
+
+    .aboutImage {
+        background-image: url(images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .valuesImage {
+        background-image: url(images/values.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .contactImage {
+        background-image: url(images/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 899px) {
+    /* homepage styles */
+
+    #homepage {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #home-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: none;
+        width: 50%;
+    }
+
+    #home-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    header, footer {
+        font-size: 18px;
+    }
+
+    /* nav */
+    #project-nav {
+        width: 50%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 15px 25px;
+    }
+
+    #home-image img {
+        margin: auto;
+        transition: all 2s ease-out;
+    }
+
+    #home-image img:hover {
+        transform: rotate(1800deg);
+    }
+
+    #home-content {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #C6C2BF;
+        min-height: 86vh;
+    }
+
+    /* project pages styles */
+
+    h1 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 0px 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #2E2F31;
+        padding-top: 30px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 850px;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+
+    .textContainer div {
+        width: 50%;
+    }
+
+    .shortDescription {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .projectText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        width: 425px;
+        margin-bottom: 30px;
+    }
+
+    .projectText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .projectText a {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        transition: all 0.2s ease-out;
+    }
+
+    .projectText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .projectText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 36px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        padding-right: 100px;
+    }
+
+    .projectText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 24px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
+
+    .displayImage {
+        width: 850px;
+        margin: auto;
+    }
+    
+    .imageContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 850px;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+
+    /* multiple images per section */
+    .halfImage {
+        width: 400px;
+    }
+
+    .thirdImage {
+        height: 200px;
+    }
+
+    #archfey-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #D0F458;
+    }
+
+    #grimes-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #F97FF4;
+    }
+
+    #kuker-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #CADCFF;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #C6C2BF;
+        border-top: 1px solid #2E2F31;
+        padding: 35px 0px;
+    }
+
+    .backNext div p {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 20px;
+    }
+
+    .backNext {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .backNext div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .next {
+        margin-left: 12.5px;
+        border-radius: 50%;
+    }
+
+    .back {
+        margin-right: 12.5px;
+        border-radius: 50%;
+    }
+
+    .next:hover, .back:hover {
+        background-color: #DDD9D6;
+    }
+
+    /* profile pages styles */
+
+    .profile {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .profileTextContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #education, #des-philo, #contact {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #B9B2FF;
+        padding: 50px 25px;
+        border-bottom: 1px solid #2E2F31;
+    }
+
+    #intro, #values, #socials {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #CBC7FC;
+        padding: 50px 25px;
+    }
+
+    .profileText {
+        width: 50%;
+    }
+
+    .profileText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        width: 425px;
+        margin-bottom: 30px;
+    }
+
+    .profileText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .profileText a {
+        display: block;
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        transition: all 0.2s ease-out;
+    }
+
+    .profileText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .profileText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 36px;
+        text-align: right;
+        padding-right: 100px;
+        letter-spacing: 0.2px;
+    }
+
+    .profileText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    /* nav */
+    #profile-nav {
+        width: 50%;
+    }
+
+    .profileRef {
+        width: 100%;
+    }
+
+    .profileRef li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 15px 25px;
+    }
+
+    .current {
+        background-color: #B9B2FF;
+    }
+
+    .notCurrent:hover {
+        background-color: #DDD9D6;
+    }
+
+    .aboutImage {
+        background-image: url(images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .valuesImage {
+        background-image: url(images/values.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .contactImage {
+        background-image: url(images/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1199px) {
+    /* homepage styles */
+
+    #homepage {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #home-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: none;
+        width: 70%;
+    }
+
+    #home-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    header, footer {
+        font-size: 20px;
+    }
+
+    /* nav */
+    #project-nav {
+        width: 30%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 15px 25px;
+    }
+
+    #home-image img {
+        margin: auto;
+        transition: all 2s ease-out;
+    }
+
+    #home-image img:hover {
+        transform: rotate(1800deg);
+    }
+
+    #home-content {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #C6C2BF;
+        min-height: 86vh;
+    }
+
+    /* project pages styles */
+
+    h1 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 0px 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #2E2F31;
+        padding-top: 35px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 1100px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    .textContainer div {
+        width: 50%;
+    }
+
+    .shortDescription {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+
+    .projectText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        width: 550px;
+        margin-bottom: 35px;
+    }
+
+    .projectText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .projectText a {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .projectText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .projectText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        padding-right: 100px;
+    }
+
+    .projectText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
+
+    .displayImage {
+        width: 1100px;
+        margin: auto;
+    }
+    
+    .imageContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 1100px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    /* multiple images per section */
+    .halfImage {
+        width: 550px;
+    }
+
+    .thirdImage {
+        height: 300px;
+    }
+
+    #archfey-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #D0F458;
+    }
+
+    #grimes-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #F97FF4;
+    }
+
+    #kuker-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #CADCFF;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #C6C2BF;
+        border-top: 1px solid #2E2F31;
+        padding: 35px 0px;
+    }
+
+    .backNext div p {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 24px;
+    }
+
+    .backNext {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .backNext div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .next {
+        margin-left: 12.5px;
+        border-radius: 50%;
+    }
+
+    .back {
+        margin-right: 12.5px;
+        border-radius: 50%;
+    }
+
+    .next:hover, .back:hover {
+        background-color: #DDD9D6;
+    }
+
+    /* profile pages styles */
+
+    .profile {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .profileTextContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #education, #des-philo, #contact {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #B9B2FF;
+        padding: 50px 25px;
+        border-bottom: 1px solid #2E2F31;
+    }
+
+    #intro, #values, #socials {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #CBC7FC;
+        padding: 50px 25px;
+    }
+
+    .profileText {
+        width: 50%;
+    }
+
+    .profileText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        width: 550px;
+        margin-bottom: 35px;
+    }
+
+    .profileText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .profileText a {
+        display: block;
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .profileText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .profileText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        padding-right: 100px;
+        letter-spacing: 0.2px;
+    }
+
+    .profileText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    /* nav */
+    #profile-nav {
+        width: 50%;
+    }
+
+    .profileRef {
+        width: 100%;
+    }
+
+    .profileRef li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 62px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 15px 25px;
+    }
+
+    .current {
+        background-color: #B9B2FF;
+    }
+
+    .notCurrent:hover {
+        background-color: #DDD9D6;
+    }
+
+    .aboutImage {
+        background-image: url(images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .valuesImage {
+        background-image: url(images/values.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .contactImage {
+        background-image: url(images/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1399px) {
+    /* homepage styles */
+
+    #homepage {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #home-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: none;
+        width: 70%;
+    }
+
+    #home-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* nav */
+    #project-nav {
+        width: 30%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 20px 25px;
+    }
+
+
+    #home-image img {
+        margin: auto;
+        transition: all 2s ease-out;
+    }
+
+    #home-image img:hover {
+        transform: rotate(1800deg);
+    }
+
+    #home-content {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #C6C2BF;
+        min-height: 86vh;
+    }
+
+    /* project pages styles */
+
+    h1 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 0px 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #2E2F31;
+        padding-top: 35px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 1100px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    .textContainer div {
+        width: 50%;
+    }
+
+    .shortDescription {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+
+    .projectText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        width: 650px;
+        margin-bottom: 35px;
+    }
+
+    .projectText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .projectText a {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .projectText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .projectText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        padding-right: 100px;
+    }
+
+    .projectText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
+
+    .displayImage {
+        width: 1200px;
+        margin: auto;
+    }
+    
+    .imageContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 1100px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    #archfey-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #D0F458;
+    }
+
+    #grimes-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #F97FF4;
+    }
+
+    #kuker-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #CADCFF;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #C6C2BF;
+        border-top: 1px solid #2E2F31;
+        padding: 35px 0px;
+    }
+
+    .backNext div p {
+        margin-left: 25px;
+        margin-right: 25px;
+        
+    }
+
+    .backNext {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .backNext div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .next {
+        margin-left: 12.5px;
+        border-radius: 50%;
+    }
+
+    .back {
+        margin-right: 12.5px;
+        border-radius: 50%;
+    }
+
+    .next:hover, .back:hover {
+        background-color: #DDD9D6;
+    }
+
+    /* profile pages styles */
+
+    .profile {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .profileTextContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #education, #des-philo, #contact {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #B9B2FF;
+        padding: 50px 25px;
+        border-bottom: 1px solid #2E2F31;
+    }
+
+    #intro, #values, #socials {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #CBC7FC;
+        padding: 50px 25px;
+    }
+
+    .profileText {
+        width: 50%;
+    }
+
+    .profileText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        width: 650px;
+        margin-bottom: 35px;
+    }
+
+    .profileText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .profileText a {
+        display: block;
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .profileText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .profileText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        padding-right: 100px;
+        letter-spacing: 0.2px;
+    }
+
+    .profileText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    /* nav */
+    #profile-nav {
+        width: 50%;
+    }
+
+    .profileRef {
+        width: 100%;
+    }
+
+    .profileRef li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 20px 25px;
+    }
+
+    .current {
+        background-color: #B9B2FF;
+    }
+
+    .notCurrent:hover {
+        background-color: #DDD9D6;
+    }
+
+    .aboutImage {
+        background-image: url(images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .valuesImage {
+        background-image: url(images/values.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .contactImage {
+        background-image: url(images/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    /* homepage styles */
+
+    #homepage {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .contentWrap {
+        width: 1600px;
+    }
+
+    #home-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: none;
+        width: 70%;
+    }
+
+    #home-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* nav */
+    #project-nav {
+        width: 30%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 20px 25px;
+    }
+
+
+    #home-image img {
+        margin: auto;
+        transition: all 2s ease-out;
+    }
+
+    #home-image img:hover {
+        transform: rotate(1800deg);
+    }
+
+    #home-content {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #C6C2BF;
+        min-height: 86vh;
+    }
+
+    /* project pages styles */
+
+    h1 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0px;
+        margin: 0px 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #2E2F31;
+        padding-top: 35px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 1200px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    .textContainer div {
+        width: 50%;
+    }
+
+    .shortDescription {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        width: 1200px;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+
+    .projectText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        width: 600px;
+        margin-bottom: 35px;
+    }
+
+    .projectText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .projectText a {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .projectText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .projectText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        padding-right: 100px;
+    }
+
+    .projectText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
+
+    .displayImage {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .imageContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 1250px;
+        margin: auto;
+        padding-bottom: 90px;
+    }
+
+    #archfey-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #D0F458;
+    }
+
+    #grimes-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #F97FF4;
+    }
+
+    #kuker-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #CADCFF;
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #C6C2BF;
+        border-top: 1px solid #2E2F31;
+        padding: 35px 0px;
+    }
+
+    .backNext div p {
+        margin-left: 25px;
+        margin-right: 25px;
+        
+    }
+
+    .backNext {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .backNext div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .next {
+        margin-left: 12.5px;
+        border-radius: 50%;
+    }
+
+    .back {
+        margin-right: 12.5px;
+        border-radius: 50%;
+    }
+
+    .next:hover, .back:hover {
+        background-color: #DDD9D6;
+    }
+
+    /* profile pages styles */
+
+    .profile {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .profileTextContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #education, #des-philo, #contact {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #B9B2FF;
+        padding: 50px 25px;
+        border-bottom: 1px solid #2E2F31;
+    }
+
+    #intro, #values, #socials {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #CBC7FC;
+        padding: 50px 25px;
+    }
+
+    .profileText {
+        width: 50%;
+    }
+
+    .profileText p {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        width: 650px;
+        margin-bottom: 35px;
+    }
+
+    .profileText .lastP {
+        margin-bottom: 0px;
+    }
+
+    .profileText a {
+        display: block;
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 32px;
+        transition: all 0.2s ease-out;
+    }
+
+    .profileText a:hover {
+        transform: translate(25px);
+        text-decoration: underline;
+    }
+
+    .profileText h2 {
+        font-family: 'pp_neue_montrealbook', sans-serif;
+        font-size: 42px;
+        text-align: right;
+        padding-right: 100px;
+        letter-spacing: 0.2px;
+    }
+
+    .profileText h3 {
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+
+    /* nav */
+    #profile-nav {
+        width: 50%;
+    }
+
+    .profileRef {
+        width: 100%;
+    }
+
+    .profileRef li {
+        display: block;
+        font-family: 'neue_montrealregular', sans-serif;
+        font-size: 72px;
+        letter-spacing: -1px;
+        text-align: right;
+        border-bottom: 1px solid #2E2F31;
+        padding: 20px 25px;
+    }
+
+    .current {
+        background-color: #B9B2FF;
+    }
+
+    .notCurrent:hover {
+        background-color: #DDD9D6;
+    }
+
+    .aboutImage {
+        background-image: url(images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .valuesImage {
+        background-image: url(images/values.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+
+    .contactImage {
+        background-image: url(images/contact.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #DDD9D6;
+        border-right: 1px solid #2E2F31;
+        border-bottom: 1px solid #2E2F31;
+        width: 50%;
+    }
+}
+
