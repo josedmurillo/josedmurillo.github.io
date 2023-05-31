@@ -317,6 +317,13 @@ article {
     background-color: #0ACF83;
 }
 
+#andytown-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
 .other {
     display: flex;
     flex-direction: column;
