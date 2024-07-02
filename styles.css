@@ -246,6 +246,10 @@ article {
     text-align: center;
 }
 
+.view {
+    text-decoration: underline;
+}
+
 .projectText a:hover {
     transform: translate(25px);
     text-decoration: underline;
@@ -289,6 +293,21 @@ article {
     height: 100px;
 }
 
+#andytown-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+#childrennow-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #F3F0E9;
+}
+
+/* Currently unused */
 #archfey-content {
     display: flex;
     flex-flow: column;
@@ -315,13 +334,6 @@ article {
     flex-flow: column;
     justify-content: center;
     background-color: #0ACF83;
-}
-
-#andytown-content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    background-color: #FFFFFF;
 }
 
 .other {
